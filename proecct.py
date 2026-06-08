@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 print(" Загрузка данных...")
-df = pd.read_csv("order_10000 .csv")  # Обратите внимание на пробел в имени файла!
+df = pd.read_csv("order_10000 .csv") 
 
 df['order_date'] = pd.to_datetime(df['order_date'], errors='coerce')
 
